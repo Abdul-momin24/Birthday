@@ -1,0 +1,11 @@
+{
+  "headers": [
+    {
+      "source": "/(.*)\\.less",
+      "headers": [
+        { "key": "Content-Type", "value": "text/less; charset=utf-8" }
+      ]
+    }
+  ]
+}
+
