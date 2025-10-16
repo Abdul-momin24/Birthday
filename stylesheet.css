@@ -1327,13 +1327,28 @@ audio {
     	}
     }*/
 
+.center-msg-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+
+.center-msg-container .center-msg {
+	position: relative;
+	width: 90%;
+	max-width: 600px;
+}
 
 .center-msg {
 	background: rgba(255, 255, 255, 0.95);
 	border-radius: 16px;
 	padding: 40px 25px;
-	max-width: 500px;
-	margin: 40px auto 30px auto;
 	box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
 	text-align: center;
 	font-family: 'Signika', sans-serif;
@@ -1341,12 +1356,10 @@ audio {
 	color: #222;
 	position: relative;
 	height: 170px;
-	/* slightly smaller, more compact */
 	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	z-index: 100;
 }
 /* Center message animation (scoped to avoid conflict with story .message) */
 .center-msg .message {
